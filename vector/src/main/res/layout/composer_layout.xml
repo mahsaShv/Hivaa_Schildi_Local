@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:constraintSet="@layout/composer_layout_constraint_set_compact"
-    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout"
+    android:layoutDirection="ltr">
 
     <!-- ========================
         /!\ Constraints for this layout are defined in external layout files that are used as constraint set for animation.

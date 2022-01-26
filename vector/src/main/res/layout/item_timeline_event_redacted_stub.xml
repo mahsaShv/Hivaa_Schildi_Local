@@ -6,6 +6,11 @@
     android:drawablePadding="8dp"
     android:gravity="center_vertical"
     android:text="@string/event_redacted"
-    android:textColor="?vctr_content_tertiary"
+    android:textColor="#000000"
     app:drawableStartCompat="@drawable/ic_trash_16"
-    app:drawableTint="?vctr_content_tertiary" />
+    android:layout_margin="20dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"
+    app:drawableTint="#000000" />

@@ -12,6 +12,8 @@
 /captures
 .externalNativeBuild
 
+hivaa.keystore
+
 /tmp
 /fastlane/private
 /fastlane/report.xml

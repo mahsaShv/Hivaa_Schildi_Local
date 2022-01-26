@@ -17,7 +17,9 @@
 package im.vector.app.features
 
 import android.app.Activity
+import android.content.Context
 import android.content.Intent
+import android.content.res.Configuration
 import android.os.Bundle
 import android.os.Parcelable
 import androidx.lifecycle.Lifecycle
@@ -52,6 +54,12 @@ import kotlinx.parcelize.Parcelize
 import org.matrix.android.sdk.api.failure.GlobalError
 import timber.log.Timber
 import javax.inject.Inject
+import android.os.Build
+import android.util.DisplayMetrics
+
+import im.vector.app.features.settings.VectorLocale
+import java.util.*
+
 
 @Parcelize
 data class MainActivityArgs(
@@ -105,6 +113,18 @@ class MainActivity : VectorBaseActivity<ActivityMainBinding>(), UnlockedActivity
         if (args.clearCredentials || args.isUserLoggedOut || args.clearCache) {
             clearNotifications()
         }
+
+//        val currentLocale: Locale = VectorLocale.applicationLocale
+//        val configuration: Configuration = resources.configuration
+//        if (currentLocale.language == "fa") {
+//            configuration.setLayoutDirection(Locale("fa"))
+//        } else {
+//            configuration.setLayoutDirection(Locale.ENGLISH)
+//        }
+//
+//        val context = applicationContext.createConfigurationContext(configuration)
+//        context.resources.displayMetrics.setTo(resources.displayMetrics);
+
         // Handle some wanted cleanup
         if (args.clearCache || args.clearCredentials) {
             doCleanUp()
@@ -256,3 +276,5 @@ class MainActivity : VectorBaseActivity<ActivityMainBinding>(), UnlockedActivity
         }
     }
 }
+
+

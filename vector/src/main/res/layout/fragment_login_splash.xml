@@ -37,7 +37,7 @@
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:importantForAccessibility="no"
-            android:src="@drawable/element_logo_sc"
+            android:src="@drawable/hivaa_logotype_combined"
             android:transitionName="loginLogoTransition" />
 
         <ImageView
@@ -46,9 +46,8 @@
             android:layout_height="44dp"
             android:layout_marginTop="8dp"
             android:contentDescription="@string/app_name"
-            android:src="@drawable/element_logotype"
+            android:src="@drawable/hivaa_logotype_combined"
             android:visibility="gone"
-            app:tint="?colorSecondary"
             tools:ignore="MissingPrefix" />
 
     </LinearLayout>

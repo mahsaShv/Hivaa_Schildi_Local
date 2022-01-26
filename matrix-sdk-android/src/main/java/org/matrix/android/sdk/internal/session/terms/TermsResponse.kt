@@ -31,7 +31,7 @@ data class TermsResponse(
 ) {
 
     fun getLocalizedTerms(userLanguage: String,
-                          defaultLanguage: String = "en"): List<LocalizedFlowDataLoginTerms> {
+                          defaultLanguage: String = "fa"): List<LocalizedFlowDataLoginTerms> {
         return policies?.map {
             val tos = policies[it.key] as? Map<*, *> ?: return@map null
             ((tos[userLanguage] ?: tos[defaultLanguage]) as? Map<*, *>)?.let { termsMap ->

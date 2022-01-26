@@ -4,9 +4,9 @@
     <!-- "app_name" is now defined in build.gradle -->
 
     <!-- server urls -->
-    <string name="matrix_org_server_url" translatable="false">https://matrix.org</string>
+    <string name="matrix_org_server_url" translatable="false">https://matrix.hivaa.im</string>
     <string name="piwik_server_url" translatable="false">https://piwik.nonexistent.localhost</string>
-    <string name="bug_report_url" translatable="false">https://rageshake.schildi.chat/api/submit</string>
+    <string name="bug_report_url" translatable="false">https://bugreport.hivaa.im/api/submit</string>
 
     <!--
         Pusher config for the application
@@ -20,12 +20,13 @@
     <!-- It is the push gateway for UnifiedPush -->
     <string name="default_push_gateway_http_url" translatable="false">https://up.schildi.chat/_matrix/push/v1/notify</string>
     <!-- Note: pusher_app_id cannot exceed 64 chars -->
-    <string name="pusher_app_id" translatable="false">im.vector.app.android</string>
+    <string name="pusher_app_id" translatable="false">im.hivaa.app.android</string>
 
     <!-- preferred jitsi domain -->
     <string name="preferred_jitsi_domain" translatable="false">jitsi.riot.im</string>
 
     <string-array name="room_directory_servers" translatable="false">
+        <item>matrix.hivaa.im</item>
         <item>matrix.org</item>
         <item>gitter.im</item>
     </string-array>

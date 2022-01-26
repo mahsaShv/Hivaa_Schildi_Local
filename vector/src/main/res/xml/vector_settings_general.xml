@@ -31,7 +31,10 @@
             android:key="SETTINGS_DISCOVERY_PREFERENCE_KEY"
             android:persistent="false"
             android:summary="@string/settings_discovery_manage"
-            android:title="@string/settings_discovery_category" />
+            android:title="@string/settings_discovery_category"
+            app:fragment="im.vector.app.features.discovery.DiscoverySettingsFragment"
+            app:isPreferenceVisible="@bool/false_not_implemented"
+            />
 
     </im.vector.app.core.preference.VectorPreferenceCategory>
 
@@ -51,7 +54,8 @@
 
     </im.vector.app.core.preference.VectorPreferenceCategory>
 
-    <im.vector.app.core.preference.VectorPreferenceCategory android:title="@string/settings_integrations">
+    <im.vector.app.core.preference.VectorPreferenceCategory android:title="@string/settings_integrations"
+        app:isPreferenceVisible="@bool/false_not_implemented">
 
         <im.vector.app.core.preference.VectorPreference
             android:focusable="false"
@@ -76,22 +80,26 @@
         <im.vector.app.core.preference.VectorPreference
             android:key="SETTINGS_LOGGED_IN_PREFERENCE_KEY"
             android:title="@string/settings_logged_in"
-            tools:summary="\@user:matrix.org" />
+            tools:summary="\@user:matrix.org"
+            app:isPreferenceVisible="false"/>
 
         <im.vector.app.core.preference.VectorPreference
             android:key="SETTINGS_HOME_SERVER_PREFERENCE_KEY"
             android:title="@string/settings_home_server"
             app:fragment="im.vector.app.features.settings.homeserver.HomeserverSettingsFragment"
-            tools:summary="https://homeserver.org" />
+            tools:summary="https://homeserver.org"
+            app:isPreferenceVisible="false"/>
 
         <im.vector.app.core.preference.VectorPreference
             android:key="SETTINGS_IDENTITY_SERVER_PREFERENCE_KEY"
             android:title="@string/settings_identity_server"
-            tools:summary="https://identity.server.url" />
+            tools:summary="https://identity.server.url"
+            app:isPreferenceVisible="false"/>
 
         <im.vector.app.core.preference.VectorPreference
             android:key="SETTINGS_CLEAR_MEDIA_CACHE_PREFERENCE_KEY"
-            android:title="@string/settings_clear_media_cache" />
+            android:title="@string/settings_clear_media_cache"
+            app:isPreferenceVisible="false"/>
 
         <im.vector.app.core.preference.VectorPreference
             android:key="SETTINGS_CLEAR_CACHE_PREFERENCE_KEY"
@@ -107,7 +115,8 @@
 
     </im.vector.app.core.preference.VectorPreferenceCategory>
 
-    <im.vector.app.core.preference.VectorPreferenceCategory android:title="@string/settings_deactivate_account_section">
+    <im.vector.app.core.preference.VectorPreferenceCategory android:title="@string/settings_deactivate_account_section"
+        app:isPreferenceVisible="false">
 
         <im.vector.app.core.preference.VectorPreference
             android:key="SETTINGS_DEACTIVATE_ACCOUNT_KEY"

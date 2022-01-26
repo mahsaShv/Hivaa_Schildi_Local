@@ -138,7 +138,8 @@
             android:defaultValue="false"
             android:key="SETTINGS_ENABLE_MARKDOWN_KEY"
             android:summary="@string/settings_send_markdown_summary"
-            android:title="@string/settings_send_markdown" />
+            android:title="@string/settings_send_markdown"
+            app:isPreferenceVisible="false"/>
 
         <im.vector.app.core.preference.VectorSwitchPreference
             android:defaultValue="true"
@@ -172,7 +173,8 @@
 
     </im.vector.app.core.preference.VectorPreferenceCategory>
 
-    <im.vector.app.core.preference.VectorPreferenceCategory android:title="@string/settings_category_timeline">
+    <im.vector.app.core.preference.VectorPreferenceCategory android:title="@string/settings_category_timeline"
+        app:isPreferenceVisible="false">
 
         <im.vector.app.core.preference.VectorSwitchPreference
             android:defaultValue="true"
@@ -182,7 +184,8 @@
 
         <im.vector.app.core.preference.VectorSwitchPreference
             android:key="SETTINGS_ALWAYS_SHOW_TIMESTAMPS_KEY"
-            android:title="@string/settings_always_show_timestamps" />
+            android:title="@string/settings_always_show_timestamps"
+            app:isPreferenceVisible="false"/>
 
         <im.vector.app.core.preference.VectorSwitchPreference
             android:key="SETTINGS_12_24_TIMESTAMPS_KEY"
@@ -193,13 +196,15 @@
             android:defaultValue="true"
             android:key="SETTINGS_SHOW_READ_RECEIPTS_KEY"
             android:summary="@string/settings_show_read_receipts_summary"
-            android:title="@string/settings_show_read_receipts" />
+            android:title="@string/settings_show_read_receipts"
+            app:isPreferenceVisible="false"/>
 
         <im.vector.app.core.preference.VectorSwitchPreference
             android:defaultValue="false"
             android:key="SETTINGS_SHOW_REDACTED_KEY"
             android:summary="@string/settings_show_redacted_summary"
-            android:title="@string/settings_show_redacted" />
+            android:title="@string/settings_show_redacted"
+            app:isPreferenceVisible="false" />
 
         <im.vector.app.core.preference.VectorSwitchPreference
             android:defaultValue="true"

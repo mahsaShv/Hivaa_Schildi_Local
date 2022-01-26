@@ -57,7 +57,7 @@ class LoginServerUrlFormFragment @Inject constructor() : AbstractLoginFragment<F
     }
 
     private fun setupViews() {
-        views.loginServerUrlFormLearnMore.setOnClickListener { learnMore() }
+//        views.loginServerUrlFormLearnMore.setOnClickListener { learnMore() }
         views.loginServerUrlFormClearHistory.setOnClickListener { clearHistory() }
         views.loginServerUrlFormSubmit.setOnClickListener { submit() }
     }
@@ -86,7 +86,7 @@ class LoginServerUrlFormFragment @Inject constructor() : AbstractLoginFragment<F
                 views.loginServerUrlFormIcon.isVisible = true
                 views.loginServerUrlFormTitle.text = getString(R.string.login_connect_to_modular)
                 views.loginServerUrlFormText.text = getString(R.string.login_server_url_form_modular_text)
-                views.loginServerUrlFormLearnMore.isVisible = true
+//                views.loginServerUrlFormLearnMore.isVisible = true
                 views.loginServerUrlFormHomeServerUrlTil.hint = getText(R.string.login_server_url_form_modular_hint)
                 views.loginServerUrlFormNotice.text = getString(R.string.login_server_url_form_modular_notice)
             }
@@ -94,7 +94,7 @@ class LoginServerUrlFormFragment @Inject constructor() : AbstractLoginFragment<F
                 views.loginServerUrlFormIcon.isVisible = false
                 views.loginServerUrlFormTitle.text = getString(R.string.login_server_other_title)
                 views.loginServerUrlFormText.text = getString(R.string.login_connect_to_a_custom_server)
-                views.loginServerUrlFormLearnMore.isVisible = false
+//                views.loginServerUrlFormLearnMore.isVisible = false
                 views.loginServerUrlFormHomeServerUrlTil.hint = getText(R.string.login_server_url_form_other_hint)
                 views.loginServerUrlFormNotice.text = getString(R.string.login_server_url_form_common_notice)
             }
@@ -110,9 +110,9 @@ class LoginServerUrlFormFragment @Inject constructor() : AbstractLoginFragment<F
                 ?: TextInputLayout.END_ICON_NONE
     }
 
-    private fun learnMore() {
-        openUrlInChromeCustomTab(requireActivity(), null, EMS_LINK)
-    }
+//    private fun learnMore() {
+//        openUrlInChromeCustomTab(requireActivity(), null, EMS_LINK)
+//    }
 
     private fun clearHistory() {
         loginViewModel.handle(LoginAction.ClearHomeServerHistory)

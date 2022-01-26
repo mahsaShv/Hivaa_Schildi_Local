@@ -36,7 +36,7 @@ import java.util.Date
 import java.util.Locale
 
 private val SCREENSHOT_FOLDER_LOCATION = "${Environment.DIRECTORY_PICTURES}/failure_screenshots"
-private val deviceLanguage = Locale.getDefault().language
+private val deviceLanguage = "fa"
 
 class ScreenshotFailureRule : TestWatcher() {
     override fun failed(e: Throwable?, description: Description) {

@@ -76,6 +76,7 @@ abstract class AbsMessageItem<H : AbsMessageItem.Holder> : AbsBaseMessageItem<H>
         }
     }
 
+    @SuppressLint("WrongConstant")
     override fun bind(holder: H) {
         super.bind(holder)
         val contentInBubble = infoInBubbles(holder.memberNameView.context)
@@ -84,6 +85,11 @@ abstract class AbsMessageItem<H : AbsMessageItem.Holder> : AbsBaseMessageItem<H>
         val avatarImageView: ImageView?
         var memberNameView: TextView?
         var timeView: TextView?
+
+        //added by hivaa
+        val layoutItemTimeLineBase : RelativeLayout?
+        val viewStubContainer : LinearLayout?
+
         val hiddenViews = ArrayList<View>()
         val invisibleViews = ArrayList<View>()
 
@@ -249,9 +255,13 @@ abstract class AbsMessageItem<H : AbsMessageItem.Holder> : AbsBaseMessageItem<H>
         val bubbleFootView by bind<LinearLayout>(R.id.bubbleFootView)
         val bubbleFooterTimeView by bind<TextView>(R.id.bubbleFooterMessageTimeView)
         val bubbleFooterReadReceipt by bind<ImageView>(R.id.bubbleFooterReadReceipt)
-        val viewStubContainer by bind<FrameLayout>(R.id.viewStubContainer)
+//        val viewStubContainer by bind<FrameLayout>(R.id.viewStubContainer)
+        //TODO check
         val sendStateImageView by bind<SendStateImageView>(R.id.messageSendStateImageView)
         val eventSendingIndicator by bind<ProgressBar>(R.id.eventSendingIndicator)
+
+        val layoutItemTimeLineBase by bind<RelativeLayout>(R.id.layout_main_item_timeline_base)
+        val viewStubContainer by bind<LinearLayout>(R.id.viewStubContainer)
     }
 
     /**

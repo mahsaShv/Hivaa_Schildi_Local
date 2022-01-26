@@ -39,13 +39,13 @@ class LoginServerSelectionFragment @Inject constructor() : AbstractLoginFragment
         super.onViewCreated(view, savedInstanceState)
 
         initViews()
-        initTextViews()
+//        initTextViews()
     }
 
     private fun initViews() {
-        views.loginServerChoiceEmsLearnMore.setOnClickListener { learnMore() }
+//        views.loginServerChoiceEmsLearnMore.setOnClickListener { learnMore() }
         views.loginServerChoiceMatrixOrg.setOnClickListener { selectMatrixOrg() }
-        views.loginServerChoiceEms.setOnClickListener { selectEMS() }
+//        views.loginServerChoiceEms.setOnClickListener { selectEMS() }
         views.loginServerChoiceOther.setOnClickListener { selectOther() }
         views.loginServerIKnowMyIdSubmit.setOnClickListener { loginWithMatrixId() }
     }
@@ -54,12 +54,12 @@ class LoginServerSelectionFragment @Inject constructor() : AbstractLoginFragment
         views.loginServerChoiceMatrixOrg.isChecked = state.serverType == ServerType.MatrixOrg
     }
 
-    private fun initTextViews() {
-        views.loginServerChoiceEmsLearnMore.text = span {
-            text = getString(R.string.login_server_modular_learn_more)
-            textDecorationLine = "underline"
-        }
-    }
+//    private fun initTextViews() {
+//        views.loginServerChoiceEmsLearnMore.text = span {
+//            text = getString(R.string.login_server_modular_learn_more)
+//            textDecorationLine = "underline"
+//        }
+//    }
 
     private fun learnMore() {
         openUrlInChromeCustomTab(requireActivity(), null, EMS_LINK)

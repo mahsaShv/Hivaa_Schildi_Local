@@ -2,8 +2,8 @@
 <resources>
 
     <!-- Accent colors -->
-    <color name="accent_sc">#8BC34A</color>
-    <color name="accent_sc_alpha25">#3F8BC34A</color>
+    <color name="accent_sc">#20ACC1</color>
+    <color name="accent_sc_alpha25">#3F20ACC1</color>
     <color name="accent_sc_alpha12">#1E8BC34A</color>
     <color name="accent_sc_noalpha12">#edf4e6</color> <!-- same as accent_sc_alpha12 when displayed on #fafafa -->
     <color name="accent_sc_dark">#689F38</color>
@@ -97,5 +97,23 @@
     <color name="user_color_element_pl_50">@color/palette_azure</color>
     <color name="user_color_element_pl_1">@color/palette_kiwi</color>
     <color name="user_color_element_pl_0">@color/palette_element_green</color>
+
+
+    <attr name="riotx_in_message_bubble" format="color" />
+    <color name="riotx_in_message_bubble_light">#c7f3ff</color>
+    <color name="riotx_in_message_bubble_dark">#054e5c</color>
+    <color name="riotx_in_message_bubble_black">#02343d</color>
+    <attr name="riotx_out_message_bubble" format="color" />
+    <color name="riotx_out_message_bubble_light">#fafafa</color>
+    <color name="riotx_out_message_bubble_dark">#033640</color>
+    <color name="riotx_out_message_bubble_black">#02252b</color>
+
+
+    <attr name="riotx_background_conversation" format="reference" />
+    <drawable name="riotx_background_conversation_light">@drawable/background_main_conversation_light</drawable>
+    <drawable name="riotx_background_conversation_dark">@drawable/background_main_conversation_dark</drawable>
+    <drawable name="riotx_background_conversation_black">@drawable/background_main_conversation_black</drawable>
+
+
 
 </resources>

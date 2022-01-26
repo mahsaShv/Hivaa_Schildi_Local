@@ -940,7 +940,7 @@ class NotificationUtils @Inject constructor(private val context: Context,
                         .setContentTitle(stringProvider.getString(R.string.app_name))
                         .setContentText(stringProvider.getString(R.string.settings_troubleshoot_test_push_notification_content))
                         .setSmallIcon(R.drawable.ic_status_bar_sc)
-                        .setLargeIcon(getBitmap(context, R.drawable.element_logo_sc))
+                        .setLargeIcon(getBitmap(context, R.drawable.hivaa_logotype_combined))
                         .setColor(ContextCompat.getColor(context, R.color.notification_accent_color))
                         .setPriority(NotificationCompat.PRIORITY_MAX)
                         .setCategory(NotificationCompat.CATEGORY_STATUS)

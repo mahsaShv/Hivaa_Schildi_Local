@@ -16,12 +16,15 @@
 
 package im.vector.app.features.home.room.detail.timeline.item
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Color
 import android.text.TextUtils
 import android.text.method.MovementMethod
+import android.view.View
 import android.widget.LinearLayout
 import androidx.core.text.PrecomputedTextCompat
+import androidx.core.view.ViewCompat
 import androidx.core.view.isVisible
 import androidx.core.widget.TextViewCompat
 import com.airbnb.epoxy.EpoxyAttribute
@@ -70,6 +73,7 @@ abstract class MessageTextItem : AbsMessageItem<MessageTextItem.Holder>() {
     private var footerWidth: Int = 0
     private var footerHeight: Int = 0
 
+    @SuppressLint("WrongConstant")
     override fun bind(holder: Holder) {
         // Preview URL
         previewUrlViewUpdater.holder = holder
@@ -131,6 +135,17 @@ abstract class MessageTextItem : AbsMessageItem<MessageTextItem.Holder>() {
             holder.messageView.setTextFuture(null)
             holder.messageView.text = message
         }
+
+        // added by hivaa
+        if (attributes.informationData.sentByMe) {
+            holder.layoutItemTimeLineBase.layoutDirection = ViewCompat.LAYOUT_DIRECTION_RTL
+            holder.memberNameView.visibility = View.GONE
+            holder.viewStubContainer.setBackgroundResource(R.drawable.in_message_shape)
+        } else {
+            holder.layoutItemTimeLineBase.layoutDirection = ViewCompat.LAYOUT_DIRECTION_LTR
+            holder.viewStubContainer.setBackgroundResource(R.drawable.out_message_shape)
+        }
+
     }
 
     override fun unbind(holder: Holder) {

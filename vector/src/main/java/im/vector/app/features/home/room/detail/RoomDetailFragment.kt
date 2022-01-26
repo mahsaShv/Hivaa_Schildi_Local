@@ -1293,6 +1293,11 @@ class RoomDetailFragment @Inject constructor(
         scrollOnHighlightedEventCallback = ScrollOnHighlightedEventCallback(views.timelineRecyclerView, layoutManager, timelineEventController)
         views.timelineRecyclerView.layoutManager = layoutManager
         views.timelineRecyclerView.itemAnimator = null
+
+        // added by hivaa
+        views.timelineRecyclerView.setBackgroundColor(Color.TRANSPARENT)
+
+
         views.timelineRecyclerView.setHasFixedSize(true)
         modelBuildListener = OnModelBuildFinishedListener {
             it.dispatchTo(stateRestorer)

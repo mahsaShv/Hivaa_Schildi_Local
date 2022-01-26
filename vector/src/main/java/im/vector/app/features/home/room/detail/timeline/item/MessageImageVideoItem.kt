@@ -97,6 +97,21 @@ abstract class MessageImageVideoItem : AbsMessageItem<MessageImageVideoItem.Hold
         holder.mediaContentView.onClick(attributes.itemClickListener)
         holder.mediaContentView.setOnLongClickListener(attributes.itemLongClickListener)
         holder.playContentView.visibility = if (playable && !animate) View.VISIBLE else View.GONE
+
+
+        // added by hivaa
+
+        if (attributes.informationData.sentByMe) {
+
+            holder.layoutItemTimeLineBase.layoutDirection = View.LAYOUT_DIRECTION_RTL
+
+            holder.memberNameView.visibility = View.GONE
+
+        } else {
+
+            holder.layoutItemTimeLineBase.layoutDirection = View.LAYOUT_DIRECTION_LTR
+
+        }
     }
 
     override fun unbind(holder: Holder) {

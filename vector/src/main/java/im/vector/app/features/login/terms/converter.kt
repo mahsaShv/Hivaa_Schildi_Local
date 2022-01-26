@@ -42,7 +42,7 @@ import org.matrix.android.sdk.internal.auth.registration.LocalizedFlowDataLoginT
  * @param defaultLanguage the default language to use if the user language is not found for a policy in registrationFlowResponse
  */
 fun TermPolicies.toLocalizedLoginTerms(userLanguage: String,
-                                       defaultLanguage: String = "en"): List<LocalizedFlowDataLoginTerms> {
+                                       defaultLanguage: String = "fa"): List<LocalizedFlowDataLoginTerms> {
     val result = ArrayList<LocalizedFlowDataLoginTerms>()
 
     val policies = get("policies")

@@ -98,7 +98,7 @@ class VectorSettingsHelpAboutFragment @Inject constructor(
             false
         }
 
-        // third party notice
+//         third party notice
         findPreference<VectorPreference>(VectorPreferences.SETTINGS_THIRD_PARTY_NOTICES_PREFERENCE_KEY)!!
                 .onPreferenceClickListener = Preference.OnPreferenceClickListener {
             if (firstThrottler.canHandle() is FirstThrottler.CanHandlerResult.Yes) {

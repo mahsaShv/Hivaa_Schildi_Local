@@ -18,6 +18,7 @@ package im.vector.app.features.settings
 
 import android.content.Context
 import android.content.res.Configuration
+import android.util.Log
 import androidx.core.content.edit
 import im.vector.app.BuildConfig
 import im.vector.app.R
@@ -37,7 +38,7 @@ object VectorLocale {
     private const val APPLICATION_LOCALE_LANGUAGE_KEY = "APPLICATION_LOCALE_LANGUAGE_KEY"
     private const val APPLICATION_LOCALE_SCRIPT_KEY = "APPLICATION_LOCALE_SCRIPT_KEY"
 
-    private val defaultLocale = Locale("en", "US")
+    private val defaultLocale = Locale("fa","IR")
 
     private const val ISO_15924_LATN = "Latn"
 
@@ -67,7 +68,7 @@ object VectorLocale {
                     preferences.getString(APPLICATION_LOCALE_VARIANT_KEY, "")!!
             )
         } else {
-            applicationLocale = Locale.getDefault()
+            applicationLocale = Locale("fa","IR")
 
             // detect if the default language is used
             val defaultStringValue = getString(context, defaultLocale, R.string.resources_country_code)
@@ -143,17 +144,35 @@ object VectorLocale {
         val knownLocalesSet = HashSet<Triple<String, String, String>>()
 
         try {
-            val availableLocales = Locale.getAvailableLocales()
+//            val availableLocales = Locale.getAvailableLocales()
 
-            for (locale in availableLocales) {
-                knownLocalesSet.add(
+//            for (locale in availableLocales) {
+//                knownLocalesSet.add(
+//                        Triple(
+//                                getString(context, locale, R.string.resources_language),
+//                                getString(context, locale, R.string.resources_country_code),
+//                                getString(context, locale, R.string.resources_script)
+//                        )
+//                )
+//
+//            }
+
+            knownLocalesSet.add(
                         Triple(
-                                getString(context, locale, R.string.resources_language),
-                                getString(context, locale, R.string.resources_country_code),
-                                getString(context, locale, R.string.resources_script)
-                        )
-                )
-            }
+                                "fa",
+                                "IR",
+                                "Arab"
+                        ))
+
+            knownLocalesSet.add(
+                    Triple(
+                            "en",
+                            "US",
+                            "Latn"
+                    ))
+
+
+
         } catch (e: Exception) {
             Timber.e(e, "## getApplicationLocales() : failed")
             knownLocalesSet.add(

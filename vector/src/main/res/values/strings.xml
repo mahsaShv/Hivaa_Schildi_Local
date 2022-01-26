@@ -2517,7 +2517,7 @@
 
     <string name="login_server_title">Select a server</string>
     <string name="login_server_text">Just like email, accounts have one home, although you can talk to anyone</string>
-    <string name="login_server_matrix_org_text">Join millions for free on the largest public server</string>
+    <string name="login_server_matrix_org_text">Join Hivaa public server</string>
     <string name="login_server_modular_text">Premium hosting for organisations</string>
     <string name="login_server_modular_learn_more">Learn more</string>
     <string name="login_server_other_title">Other</string>
@@ -2533,7 +2533,7 @@
     <string name="login_continue">Continue</string>
     <!-- Replaced string is the homeserver url -->
     <string name="login_connect_to">Connect to %1$s</string>
-    <string name="login_connect_to_modular">Connect to Element Matrix Services</string>
+    <string name="login_connect_to_modular">Connect to Hivaa Services</string>
     <string name="login_connect_to_a_custom_server">Connect to a custom server</string>
     <!-- Replaced string is the homeserver url -->
     <string name="login_signin_to">Sign in to %1$s</string>
@@ -2618,7 +2618,7 @@
     <string name="login_signup_cancel_confirmation_content">Your account is not created yet.\n\nStop the registration process?</string>
 
     <string name="login_a11y_choose_matrix_org">Select matrix.org</string>
-    <string name="login_a11y_choose_modular">Select Element Matrix Services</string>
+    <string name="login_a11y_choose_modular">Select Hivaa Services</string>
     <string name="login_a11y_choose_other">Select a custom homeserver</string>
     <string name="login_a11y_captcha_container">Please perform the captcha challenge</string>
     <string name="login_terms_title">Accept terms to continue</string>
@@ -2636,10 +2636,10 @@
     </plurals>
 
     <string name="login_connect_using_matrix_id_notice">Alternatively, if you already have an account and you know your Matrix identifier and your password, you can use this method:</string>
-    <string name="login_connect_using_matrix_id_submit">Sign in with Matrix ID</string>
-    <string name="login_signin_matrix_id_title">Sign in with Matrix ID</string>
-    <string name="login_signin_matrix_id_notice">If you set up an account on a homeserver, use your Matrix ID (e.g. @user:domain.com) and password below.</string>
-    <string name="login_signin_matrix_id_hint">Matrix ID</string>
+    <string name="login_connect_using_matrix_id_submit">Sign in with Hivaa ID</string>
+    <string name="login_signin_matrix_id_title">Sign in with Hivaa ID</string>
+    <string name="login_signin_matrix_id_notice">If you set up an account on a homeserver, use your Hivaa ID (e.g. @user:domain.com) and password below.</string>
+    <string name="login_signin_matrix_id_hint">Hivaa ID</string>
     <string name="login_signin_matrix_id_password_notice">If you don’t know your password, go back to reset it.</string>
     <string name="login_signin_matrix_id_error_invalid_matrix_id">This is not a valid user identifier. Expected format: \'@user:homeserver.org\'</string>
     <string name="autodiscover_well_known_error">Unable to find a valid homeserver. Please check your identifier</string>

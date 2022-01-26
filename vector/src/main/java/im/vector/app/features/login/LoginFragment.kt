@@ -175,7 +175,7 @@ class LoginFragment @Inject constructor() : AbstractSSOLoginFragment<FragmentLog
             when (state.serverType) {
                 ServerType.MatrixOrg -> {
                     views.loginServerIcon.isVisible = true
-                    views.loginServerIcon.setImageResource(R.drawable.ic_logo_matrix_org)
+                    views.loginServerIcon.setImageResource(R.drawable.ic_logo_hivaa_im)
                     views.loginTitle.text = getString(resId, state.homeServerUrlFromUser.toReducedUrl())
                     views.loginNotice.text = getString(R.string.login_server_matrix_org_text)
                 }

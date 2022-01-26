@@ -181,6 +181,11 @@
         <item name="vctr_keyword_style">@style/Widget.Vector.Keyword</item>
 
         <item name="vctr_toast_background">@color/vctr_toast_background_dark</item>
+
+        <item name="riotx_in_message_bubble">@color/riotx_in_message_bubble_dark</item>
+        <item name="riotx_out_message_bubble">@color/riotx_out_message_bubble_dark</item>
+
+        <item name="riotx_background_conversation">@drawable/background_main_conversation_dark</item>
     </style>
 
     <style name="Theme.Vector.Dark" parent="Base.Theme.Vector.Dark" />

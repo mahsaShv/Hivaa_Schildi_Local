@@ -482,8 +482,8 @@ internal class LocalEchoEventFactory @Inject constructor(
         //     </blockquote>
         // </mx-reply>
         // No whitespace because currently breaks temporary formatted text to Span
-        const val REPLY_PATTERN = """<mx-reply><blockquote><a href="%s">In reply to</a> <a href="%s">%s</a><br />%s</blockquote></mx-reply>%s"""
-
+//        const val REPLY_PATTERN = """<mx-reply><blockquote><a href="%s">In reply to</a> <a href="%s">%s</a><br />%s</blockquote></mx-reply>%s"""
+        const val REPLY_PATTERN = """<mx-reply ><a  href="%s"></a></b><a href="%s">%s</a><br />%s</mx-reply>%s"""
         // This is used to replace inner mx-reply tags
         val MX_REPLY_REGEX = "<mx-reply>.*</mx-reply>".toRegex()
     }
